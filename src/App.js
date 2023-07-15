@@ -7,6 +7,8 @@ import SearchPage from './pages/searchPage'
 import MiniDrawer from './pages/dashboard';
 import SettingsPage from './pages/settingsPage';
 import ProfilePage from './pages/profilePage';
+import SignUp from './pages/SignUp';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Routes>
         <Route path = "/Dashboard" element = {<MiniDrawer/>}/>
         <Route path ="/SignIn" element = {<SignInSide/>}/>
+        <Route path = "/SignUp" element = {<SignUp/>}/>
         <Route path ="/Messages" element = {<MessagePage/>}/>
         <Route path ="/Notifications" element = {<NotificationsPage/>}/>
         <Route path ="/Search" element = {<SearchPage/>}/>

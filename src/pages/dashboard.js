@@ -32,6 +32,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import Person2Icon from '@mui/icons-material/Person2';
 import SettingsIcon from '@mui/icons-material/Settings';
 
+import Posts from '../components/post/Post';
+
 
 const drawerWidth = 240;
 
@@ -134,6 +136,8 @@ export default function MiniDrawer() {
           </Typography>
         </Toolbar>
       </AppBar>
+
+      
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
@@ -141,6 +145,7 @@ export default function MiniDrawer() {
           </IconButton>
         </DrawerHeader>
         <Divider />
+
 
 
 
@@ -216,6 +221,7 @@ export default function MiniDrawer() {
 
         </Routes>
 
+        <Posts/>
 
 
         <Typography paragraph>
